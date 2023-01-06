@@ -1,0 +1,616 @@
+:root {
+    /*colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black1: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+    --gradient:linear-gradient(207.8deg,#201E1C 16.69%,#F7931A 100%);
+
+    /*Fuentes*/
+    --dm-sans:'DM Sans', sans-serif;
+    --inter: 'Inter', sans-serif;
+
+    /*Tamaño de fuente*/
+    --font-sizeG: 24rem;
+    --font-sizeM: 18rem;
+    --font-sizeP: 14rem;
+    --font-sizeInterG: 16rem;
+    --font-sizeInterP: 12rem;
+    --font-weightG: 700;
+    --font-weightM: 500;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 6.25%;
+    font-family: var(--dm-sans);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12rem;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: var(--gradient);
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 36px;
+    align-self: center;
+}
+
+.header__title-container h1 {
+    font-size: var(--font-sizeG);
+    color: var(--just-white);
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.header__title-container p {
+    font-size: var(--font-sizeP);
+    margin-top: 24px;
+    color: var(--soft-orange);
+    font-weight: 500;
+    line-height: 18rem;
+}
+
+.header__button {
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background-color: var(--off-white);
+    font-size: var(--font-sizeP);
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--warm-black);
+    position: absolute;
+    display: block;
+    top: 275px;
+    left: calc(50% - 112px);
+    margin-top: 35px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/flechita.svg");
+    background-position: center;
+}
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--off-white);
+    margin: 0 auto;
+}
+.change-container {
+    width: 90%;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.change-container__backgroundImage {
+    width: 195px;
+    height: 195px;
+    background-image: url(../assets/imgs/Bitcoin.svg);
+    margin-top: 70px;
+    justify-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.change-container__text {
+    text-align: center;
+    max-width: 900px;
+}
+
+.change-container__text h2 {
+    color: var(--warm-black);
+    font-size: var(--font-sizeG);
+    line-height: 26px;
+    margin-top: 40px;
+}
+
+.change-container__text p {
+    color:#757575;
+    font-size: var(--font-sizeInterP);
+    line-height: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.change-container__table-section {
+    margin-top: 48px;
+}
+
+
+.change-container__table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: var(--inter);
+}
+
+.table-container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table-container table {
+    width: 100%;
+    height: 100%;
+}
+
+.table-container td {
+    width: 50%;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 19rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.change-container__table-section p {
+    font-size: var(--font-sizeM);
+    font-weight: 700;
+    line-height: 24px;
+    color: #FF9536;
+    margin-bottom: 12px;
+
+}
+
+.icon {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url(../assets/icons/trending-down\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.icon2 {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url(../assets/icons/trending-up\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.table__actualizado{
+    width: 190px;
+    height: 31px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 24px;
+    background-color: var(--soft-orange);
+    
+    
+}
+.change-container__table-section .table__actualizado p{
+    color: black;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 300;
+    line-height: 14rem;
+    font-family: var(--inter);
+ 
+}
+
+.table-container .table--top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.table-container .table--top-right {
+    border-radius: 0 15px 0 0;
+}
+
+.table-container .table--bottom-left {
+    border-radius: 0 0 0 15px;
+}
+
+.table-container .table--bottom-right {
+    border-radius: 0 0 15px 0;
+}
+
+.table-container .table-right {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 17px;
+    color: #757575;
+}
+
+.change-separador{
+    display: inline-block;
+    background-image: url(../assets/imgs/batataPequeña.svg);
+    width: 40px;
+    height: 24px;
+    left: calc(50% - 20px);
+    position: relative;
+    top: 17px;
+    margin-top: 50px;
+    
+}
+
+/*BENEFICIOS*/
+
+.benefits-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--warm-black);
+}
+
+.benefits-container__title {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.benefits-container__title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--just-white);
+}
+
+.benefits-container__title p {
+    font-size: 14px;
+    color:#808080;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.benefits-element {
+    width: 288px;
+    height: 152px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background-color: var(--warm-black1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.benefits-element .benefits-icon {
+    background-image: url(../assets/icons/Reloj.svg);
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.benefits-element .benefits-icon2 {
+    background-image: url(../assets/icons/eye\ 1.svg);
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.benefits-element .benefits-icon3 {
+    background-image: url(../assets/icons/dollar-sign\ 1.svg);
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.benefits-element .benefits-icon4 {
+    background-image: url(../assets/icons/check-circle\ 1.svg);
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.benefits-element h2 {
+    font-size: 18rem;
+    color: var(--just-white);
+    font-weight: 700;
+    line-height: 18px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.benefits-element p {
+    width: 90%;
+    color: #808080;
+    font-size: 14rempx;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+/*BITCOIN BABY*/
+
+.bitcoin-baby__img-container {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../assets/imgs/bitcoinbaby\ 1.svg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.bitcoin-baby__img-container h2 {
+    font-size: 24rem;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--just-white);
+    margin-top: 64px;
+    text-align: center;
+}
+
+/*PLANES*/
+
+.plan-section__container {
+    background-color: var(--off-white);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 15px;
+}
+
+.plan-section__container .plan-section__title {
+    color: var(--warm-black);
+    font-size: 24rem;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.plan-section__container .plan-section__text {
+    color: #757575;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+.plans-section__slider {
+    width: 100%;
+    display: flex;
+    height: 316px;
+    gap: 8px;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plan-section__card {
+    background-color: var(--just-white);
+    width: 200px;
+    scroll-snap-align: center;
+    min-width: 200px;
+    height: 270px;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plan-section__float {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 12rem;
+    line-height: 14.52px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    top: -26px;
+    left: calc(50% - 50px);
+}
+
+.plan-section__card .plan-section__pago {
+    font-size: 14rem;
+    color: var(--warm-black);
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.plan-section__card .plan-section__price {
+    display: flex;
+    justify-content: center;
+    font-family: var(--inter);
+    margin-top: 8px;
+}
+
+.plan-section__card .plan-section__price p {
+    font-size: 12rem;
+    line-height: 14.5px;
+    font-weight: 500;
+    color: var(--warm-black);
+    margin-top: 10px;
+}
+
+.plan-section__card .plan-section__price h3 {
+    font-size: 52rem;
+    line-height: 63px;
+    font-weight: 700;
+}
+
+.plan-section__card .plan-section__pago-2 {
+    font-size: 12rem;
+    line-height: 14.5px;
+    font-weight: 500;
+    color: #757575;
+    font-family: var(--inter);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.plan-section__card .plan-section__cardButton {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    background-color: var(--off-white);
+    border-radius: 4px;
+    border: solid var(--bitcoin-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-section__card .plan-section__cardButton a {
+    font-size: 14rem;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--warm-black);
+    text-decoration: none;
+}
+
+
+.plan-section__card .plan-section__cardButton a span {
+    background-image: url(../assets/icons/arrow-right\ 1.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: text-top;
+}
+
+footer {
+    background-color: var(--bitcoin-orange);
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-container {
+    height: auto;
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-container section ul {
+    list-style: none;
+}
+
+.footer-container__baja {
+    margin-top: 8px;
+}
+
+.footer-container section ul a{
+    text-decoration: none;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 18rem;
+    color: var(--just-white);
+}
+
+.footer-container__batataSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container__batataSection picture{
+    width: 40px;
+    height: 24px;
+}
+
+.footer-container__batataSection picture img {
+    width: 100%;
+}
+
+.footer-container__batataSection a {
+    text-decoration: none;
+    font-size: 8rem;
+    line-height: 18px;
+    color: var(--just-white);
+    margin-top: 8px;
+}
