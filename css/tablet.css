@@ -1,0 +1,91 @@
+
+:root {
+     /*Tamaño de fuente*/
+    --font-sizeG: 32rem;
+    --font-sizeM: 24rem;
+    --font-sizeP: 18rem;
+    --font-sizeInterG: 24rem;
+    --font-sizeInterP: 18rem;
+    --font-weightG: 700;
+    --font-weightM: 500;
+
+
+}
+
+
+header img {
+    width: 498px;
+    height: 54px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.header__title-container {
+    width: 88%;
+}
+
+.header__title-container h1 {
+    font-size: 32rem;
+    line-height: 36rem;
+}
+
+.header__title-container p {
+    font-size: 18rem;
+    line-height: 18rem;
+    margin-top: 36px;
+}
+
+.header__button {
+    padding: 20px 24px;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 18px;
+    left: calc(50% - 136px);
+}
+
+.benefits-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.benefits-element {
+    width: 348px;
+    align-self: center;
+    margin-bottom: 48px;
+}
+
+.bitcoin-baby__img-container {
+   height: 80vh;
+}
+
+.plans-section__slider {
+    justify-content: center;
+    overflow-x:hidden;
+    overscroll-behavior-x:none;
+    scroll-snap-type:none;
+    margin-bottom: 36px;
+    gap: 36px;
+}
+
+.footer-container {
+    gap: 88px;
+    
+}
+
+.footer-container section ul a{
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.footer-container__batataSection picture{
+    width: 80px;
+    height: 44px;
+}
+
+.footer-container__batataSection a {
+    font-size: 14rem;
+}
